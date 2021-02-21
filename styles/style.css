@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap");
+.container {
+  max-width: 1500px;
+  margin: auto;
+}
+
+body {
+  background-color: #f2f2f2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  font-family: "Baloo 2";
+}
+
+h1 {
+  font-size: 4em;
+}
+
+p {
+  color: grey;
+  font-size: 1.5em;
+}
+
+section {
+  padding: 1em;
+}
+
+.gradient-button {
+  background: -webkit-gradient(linear, right top, left bottom, from(#E772C7), color-stop(#f65268), to(#DA9662));
+  background: linear-gradient(to bottom left, #E772C7, #f65268, #DA9662);
+  border-radius: 5rem;
+  color: white;
+  font-size: 2rem;
+}
+
+header.navbar {
+  background-color: white;
+  padding: 1em;
+}
+
+header.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header.navbar .container img.logo {
+  height: 100%;
+}
+
+header.navbar .mobile-menu {
+  cursor: pointer;
+  height: 1.5em;
+}
+
+nav {
+  display: none;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background-color: #20272e;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+section.hero .container .left-col {
+  text-align: center;
+}
+
+section.hero .container .left-col .hero-cta {
+  text-decoration: none;
+  padding: 0 1em;
+}
+/*# sourceMappingURL=style.css.map */

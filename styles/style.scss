@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap");
+
+@import "./parcials/constants";
+@import "./parcials/mixins"; 
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+body {
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Baloo 2";
+}
+
+h1 {
+  font-size: 4em;
+}
+p {
+  color: grey;
+  font-size: 1.5em;
+}
+
+section {
+  padding: 1em;
+}
+
+.gradient-button {
+    @include primary-gradient-background();
+    border-radius: 5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+header.navbar {
+  background-color: white;
+  padding: 1em;
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    img.logo {
+      height: 100%;
+    }
+  }
+  .mobile-menu {
+    cursor: pointer;
+    height: 1.5em;
+  }
+}
+
+nav {
+  display: none;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background-color: #20272e;
+  height: 100vh;
+  padding: 1em;
+
+  ul {
+    margin-top: 5em;
+  }
+  li {
+    a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 0.5em;
+      font-size: 1.3em;
+      text-align: right;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+section.hero {
+  .container {
+    .left-col {
+      text-align: center;
+      .hero-cta {
+        text-decoration: none;
+        padding: 0 1em;
+      }
+    }
+  }
+}

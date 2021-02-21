@@ -1,0 +1,17 @@
+@mixin three-color-gradient-background($direction, $color-one, $color-two, $color-three) {
+    background: linear-gradient(
+      to $direction,
+      $color-one,
+      $color-two,
+      $color-three
+    );
+  }
+  
+  @mixin primary-gradient-background {
+    @include three-color-gradient-background(
+      bottom left,
+      $primary-color,
+      $secondary-color,
+      $tertiary-color
+    );
+  }
