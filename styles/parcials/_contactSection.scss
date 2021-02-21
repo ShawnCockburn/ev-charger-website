@@ -1,0 +1,44 @@
+section.contact {
+  position: relative;
+
+  .container {
+    display: flex;
+    text-align: center;
+    .contact-right {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 45%;
+      height: 100%;
+
+      iframe {
+        height: 100%;
+      }
+    }
+
+    label {
+      display: block;
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 0.8em;
+      margin-bottom: 1em;
+      border-radius: 1em;
+      border: 0;
+      box-sizing: border-box;
+      &:focus{
+          border: 1px 
+      }
+    }
+    input[type="button"] {
+      @include tertiary-gradient-background();
+    }
+    .contact-left {
+        margin: auto;
+    }
+  }
+}

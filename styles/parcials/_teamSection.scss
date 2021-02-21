@@ -1,0 +1,28 @@
+section.team {
+  text-align: center;
+  @include primary-gradient-background();
+    // color: white;
+  .container {
+    h2{
+      color: white;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      li {
+        background-color: white;
+        border-radius: 2rem;
+        margin: 5em 1em;
+        padding: 0 .1em;
+        h3 {
+          margin: 0;
+        }
+        img {
+          margin-top:-5em;
+          width: 10em;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

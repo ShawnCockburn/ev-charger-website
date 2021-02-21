@@ -1,6 +1,4 @@
 section.hero {
-  min-height: 600px;
-  height: 100vh;
   position: relative;
   overflow: hidden;
   .container {
@@ -8,7 +6,6 @@ section.hero {
       text-align: center;
       .hero-cta {
         text-decoration: none;
-        padding: 0 1em;
       }
     }
   }
