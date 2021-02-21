@@ -1,0 +1,33 @@
+section.bollard {
+    @include secondary-gradient-background();
+    color: white;
+    .container{
+        padding: 2em 0;
+        text-align: center;
+        ul{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            li{
+                display: grid;
+                grid-template-columns: 20% auto;
+                height: 350px;
+                padding: 1em 0;
+                h3 {
+                    margin: .3em 0;
+                }
+                img.bollard{
+                    margin-top: 1em;
+                    height: 80%;
+                    max-height: 350px;
+                }
+                .text {
+                    max-height: fit-content;
+                    p{
+                        color: white;
+                    }
+                }
+            }
+        }
+        
+    }
+}

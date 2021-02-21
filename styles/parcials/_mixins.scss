@@ -15,3 +15,21 @@
       $tertiary-color
     );
   }
+
+  @mixin secondary-gradient-background {
+    @include three-color-gradient-background(
+      bottom left,
+      $primary-color-1,
+      $secondary-color-1,
+      $tertiary-color-1
+    );
+  }
+
+  @mixin tertiary-gradient-background {
+    @include three-color-gradient-background(
+      bottom left,
+      $primary-color-2,
+      $secondary-color-2,
+      $tertiary-color-2
+    );
+  }

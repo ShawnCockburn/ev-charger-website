@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap");
-.container {
-  max-width: 1500px;
-  margin: auto;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +15,14 @@ h1 {
   font-size: 4em;
 }
 
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
 p {
   color: grey;
   font-size: 1.5em;
@@ -23,14 +30,30 @@ p {
 
 section {
   padding: 1em;
+  max-width: 100vw;
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
 }
 
 .gradient-button {
-  background: -webkit-gradient(linear, right top, left bottom, from(#E772C7), color-stop(#f65268), to(#DA9662));
-  background: linear-gradient(to bottom left, #E772C7, #f65268, #DA9662);
+  background: -webkit-gradient(linear, right top, left bottom, from(#2A245A), color-stop(#8363DA), to(#53AFF6));
+  background: linear-gradient(to bottom left, #2A245A, #8363DA, #53AFF6);
   border-radius: 5rem;
   color: white;
   font-size: 2rem;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 header.navbar {
@@ -58,16 +81,6 @@ header.navbar .mobile-menu {
 
 nav {
   display: none;
-}
-
-a {
-  color: #444444;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 nav {
@@ -108,6 +121,13 @@ nav.menu-btn {
   display: block;
 }
 
+section.hero {
+  min-height: 600px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
 section.hero .container .left-col {
   text-align: center;
 }
@@ -115,5 +135,62 @@ section.hero .container .left-col {
 section.hero .container .left-col .hero-cta {
   text-decoration: none;
   padding: 0 1em;
+}
+
+section.hero img.hero-image {
+  position: absolute;
+  width: 600px;
+  top: 6em;
+  right: -300px;
+  z-index: -1;
+  color: #2A245A;
+  opacity: 50%;
+}
+
+section.bollard {
+  background: -webkit-gradient(linear, right top, left bottom, from(#E772C7), color-stop(#f65268), to(#DA9662));
+  background: linear-gradient(to bottom left, #E772C7, #f65268, #DA9662);
+  color: white;
+}
+
+section.bollard .container {
+  padding: 2em 0;
+  text-align: center;
+}
+
+section.bollard .container ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+section.bollard .container ul li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% auto;
+      grid-template-columns: 20% auto;
+  height: 350px;
+  padding: 1em 0;
+}
+
+section.bollard .container ul li h3 {
+  margin: .3em 0;
+}
+
+section.bollard .container ul li img.bollard {
+  margin-top: 1em;
+  height: 80%;
+  max-height: 350px;
+}
+
+section.bollard .container ul li .text {
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
+section.bollard .container ul li .text p {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

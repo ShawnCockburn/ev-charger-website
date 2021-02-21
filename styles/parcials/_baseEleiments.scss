@@ -1,0 +1,51 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Baloo 2";
+}
+
+h1 {
+  font-size: 4em;
+}
+h2 {
+  font-size: 3em;
+}
+h3 {
+  font-size: 2em;
+}
+p {
+  color: grey;
+  font-size: 1.5em;
+}
+
+section {
+  padding:1em;
+  max-width: 100vw;
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.gradient-button {
+  @include primary-gradient-background();
+  border-radius: 5rem;
+  color: white;
+  font-size: 2rem;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
