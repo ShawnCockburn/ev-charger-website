@@ -173,10 +173,17 @@ nav.menu-btn {
 section.hero {
   position: relative;
   overflow: hidden;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section.hero .container {
+  text-align: center;
 }
 
 section.hero .container .left-col {
-  text-align: center;
+  max-width: 1000px;
+  margin: auto;
 }
 
 section.hero .container .left-col .hero-cta {
@@ -211,7 +218,7 @@ section.bollard .container ul {
       grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
-section.bollard .container ul li {
+section.bollard .container ul li .inner-tilt {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20% auto;
@@ -221,7 +228,7 @@ section.bollard .container ul li {
 }
 
 section.bollard .container ul li h3 {
-  margin: .3em 0;
+  margin: 0.3em 0;
 }
 
 section.bollard .container ul li img.bollard {
@@ -238,6 +245,34 @@ section.bollard .container ul li .text {
 
 section.bollard .container ul li .text p {
   color: white;
+}
+
+@media only screen and (min-width: 1250px) {
+  section.bollard .container ul li {
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    background-color: white;
+    border-radius: 2rem;
+    margin: 5em 1em;
+    padding: 2em 4em;
+  }
+  section.bollard .container ul li .inner-tilt {
+    -webkit-transition: -webkit-transform 200ms;
+    transition: -webkit-transform 200ms;
+    transition: transform 200ms;
+    transition: transform 200ms, -webkit-transform 200ms;
+  }
+  section.bollard .container ul li .inner-tilt:hover {
+    -webkit-transform: translateZ(30px);
+            transform: translateZ(30px);
+  }
+  section.bollard .container ul li .text {
+    color: black;
+  }
+  section.bollard .container ul li .text p {
+    padding-top: 2em;
+    color: black;
+  }
 }
 
 section.about {
@@ -265,7 +300,21 @@ section.team .container ul li {
   background-color: white;
   border-radius: 2rem;
   margin: 5em 1em;
-  padding: 0 .1em;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+section.team .container ul li .tilt-inner {
+  padding: 0 0.1em;
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+section.team .container ul li .tilt-inner:hover {
+  -webkit-transform: translateZ(30px);
+          transform: translateZ(30px);
 }
 
 section.team .container ul li h3 {

@@ -1,9 +1,9 @@
 section.team {
   text-align: center;
   @include primary-gradient-background();
-    // color: white;
+  // color: white;
   .container {
-    h2{
+    h2 {
       color: white;
     }
     ul {
@@ -13,12 +13,19 @@ section.team {
         background-color: white;
         border-radius: 2rem;
         margin: 5em 1em;
-        padding: 0 .1em;
+        transform-style: preserve-3d;
+        .tilt-inner {
+          padding: 0 0.1em;
+          transition: transform 200ms;
+          &:hover {
+            transform: translateZ(30px);
+          }
+        }
         h3 {
           margin: 0;
         }
         img {
-          margin-top:-5em;
+          margin-top: -5em;
           width: 10em;
           border-radius: 50%;
         }

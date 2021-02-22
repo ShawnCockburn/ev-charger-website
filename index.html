@@ -26,19 +26,19 @@
           />
           <ul>
             <li class="current">
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <section class="hero">
+    <section class="hero" id="home">
       <img class="hero-image" src="/img/smart.svg" alt="hero image" />
       <div class="container">
         <div class="left-col">
@@ -57,38 +57,43 @@
       <div class="container">
         <h2>Our Chargers</h2>
         <ul>
-          <li>
-            <img
-              src="/img/bolardCharger.svg"
-              alt="Image of bedale bollard charger"
-              class="bollard"
-            />
-            <div class="text">
-              <h3>Bedale Bollard</h3>
-              <p>
-                Voluptate reprehenderit ipsum id culpa excepteur occaecat
-                laborum commodo voluptate occaecat.
-              </p>
-            </div>
+          <li class="tilt-outer">
+            <div class="inner-tilt">
+                <img
+                src="/img/bolardCharger.svg"
+                alt="Image of bedale bollard charger"
+                class="bollard"
+              />
+              <div class="text">
+                <h3>Thirsk Bollard</h3>
+                <p>
+                  Voluptate reprehenderit ipsum id culpa excepteur occaecat
+                  laborum commodo voluptate occaecat.
+                </p>
+              </div>
+              </div>
           </li>
-          <li>
-            <img
-              src="/img/bolardCharger.svg"
-              alt="Image of bedale bollard charger"
-              class="bollard"
-            />
-            <div class="text">
-              <h3>Thirsk Bollard</h3>
-              <p>
-                Voluptate reprehenderit ipsum id culpa excepteur occaecat
-                laborum commodo voluptate occaecat.
-              </p>
-            </div>
+          <li class="tilt-outer">
+              <div class="inner-tilt">
+                <img
+                src="/img/bolardCharger.svg"
+                alt="Image of bedale bollard charger"
+                class="bollard"
+              />
+              <div class="text">
+                <h3>Thirsk Bollard</h3>
+                <p>
+                  Voluptate reprehenderit ipsum id culpa excepteur occaecat
+                  laborum commodo voluptate occaecat.
+                </p>
+              </div>
+              </div>
+            
           </li>
         </ul>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="about">
           <h2>About</h2>
@@ -107,14 +112,18 @@
         <div class="container">
             <h2>The Team!</h2>
             <ul>
-              <li>
-                <img src="/img/missing-image.png" alt="" />
-                <div class="text">
-                  <h3>Ian Goodwin</h3>
-                  <p>Founder & Lead Developer</p>
-                </div>
+              <li class="tilt-outer">
+                  <div class="tilt-inner">
+                    <img src="/img/missing-image.png" alt="" />
+                    <div class="text">
+                      <h3>Ian Goodwin</h3>
+                      <p>Founder & Lead Developer</p>
+                    </div>
+                  </div>
+                
               </li>
-              <li>
+              <li class="tilt-outer">
+                <div class="tilt-inner">
                 <img
                   src="https://media-exp1.licdn.com/dms/image/C4D03AQEFiivCtgjgIw/profile-displayphoto-shrink_200_200/0/1612451641993?e=1619654400&v=beta&t=8MjCpIRLZ96iiX5ns6wfYgeXmvnjKUusY62BiVKdlRw"
                   alt=""
@@ -123,8 +132,10 @@
                   <h3>Alexander Goodwin</h3>
                   <p>Account & Product Manager</p>
                 </div>
+            </div>
               </li>
-              <li>
+              <li class="tilt-outer">
+                <div class="tilt-inner">
                 <img
                   src="https://avatars.githubusercontent.com/u/60285801?s=460&u=343d01469f4860722b4de9c13ab369c41e32788e&v=4"
                   alt=""
@@ -133,11 +144,12 @@
                   <h3>Shawn Cockburn</h3>
                   <p>Software Developer</p>
                 </div>
+                </div>
               </li>
             </ul>
           </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
           <div class="contact-left">
             <h2>Contact</h2>
@@ -163,6 +175,8 @@
           </div>
         </div>
       </section>
+      <script   src="https://code.jquery.com/jquery-3.5.1.slim.min.js"   integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="   crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
     <script src="/js/index.js"></script>
   </body>
 </html>

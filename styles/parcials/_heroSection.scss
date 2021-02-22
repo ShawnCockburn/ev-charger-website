@@ -1,9 +1,12 @@
 section.hero {
   position: relative;
   overflow: hidden;
+  align-content: center;
   .container {
+    text-align: center;
     .left-col {
-      text-align: center;
+      max-width: 1000px;
+      margin: auto;
       .hero-cta {
         text-decoration: none;
       }
@@ -18,4 +21,8 @@ section.hero {
     color: $primary-color;
     opacity: 50%;
   }
+}
+
+//desktop
+@media only screen and (min-width: $desktop-min) {
 }
