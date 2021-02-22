@@ -3,6 +3,7 @@ section.team {
   @include primary-gradient-background();
   // color: white;
   .container {
+    padding: 5em 0;
     h2 {
       color: white;
     }
@@ -12,7 +13,7 @@ section.team {
       li {
         background-color: white;
         border-radius: 2rem;
-        margin: 5em 1em;
+        margin: 5em 3em;
         transform-style: preserve-3d;
         .tilt-inner {
           padding: 0 0.1em;

@@ -6,14 +6,14 @@ section.contact {
     text-align: center;
     .contact-right {
       display: none;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 45%;
-      height: 100%;
+      // position: absolute;
+      // right: 0;
+      // top: 0;
 
       iframe {
         height: 100%;
+        width: 100%;
+        border-radius: 2em;
       }
     }
 
@@ -30,15 +30,29 @@ section.contact {
       border-radius: 1em;
       border: 0;
       box-sizing: border-box;
-      &:focus{
-          border: 1px 
+      &:focus {
+        border: 1px;
       }
     }
     input[type="button"] {
       @include tertiary-gradient-background();
     }
     .contact-left {
-        margin: auto;
+      margin: auto;
+    }
+  }
+}
+
+//desktop
+@media only screen and (min-width: $desktop-standard) {
+  section.contact {
+    .container {
+      .contact-right {
+        display: unset;
+        width: 60%;
+        height: 400px;
+        padding-left: 1em;
+      }
     }
   }
 }

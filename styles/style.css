@@ -51,6 +51,15 @@ section {
   padding: 0.8em 2em;
   width: unset;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+.gradient-button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 a {
@@ -200,6 +209,16 @@ section.hero img.hero-image {
   opacity: 50%;
 }
 
+@media only screen and (min-width: 768px) {
+  section.hero {
+    height: 600px;
+    padding-top: 100px;
+  }
+  section.hero .hero-cta {
+    margin-top: 4em;
+  }
+}
+
 section.bollard {
   background: -webkit-gradient(linear, right top, left bottom, from(#E772C7), color-stop(#f65268), to(#DA9662));
   background: linear-gradient(to bottom left, #E772C7, #f65268, #DA9662);
@@ -253,7 +272,7 @@ section.bollard .container ul li .text p {
             transform-style: preserve-3d;
     background-color: white;
     border-radius: 2rem;
-    margin: 5em 1em;
+    margin: 5em 3em;
     padding: 2em 4em;
   }
   section.bollard .container ul li .inner-tilt {
@@ -277,12 +296,17 @@ section.bollard .container ul li .text p {
 
 section.about {
   text-align: center;
+  margin: 6em 0 10em 0;
 }
 
 section.team {
   text-align: center;
   background: -webkit-gradient(linear, right top, left bottom, from(#2A245A), color-stop(#8363DA), to(#53AFF6));
   background: linear-gradient(to bottom left, #2A245A, #8363DA, #53AFF6);
+}
+
+section.team .container {
+  padding: 5em 0;
 }
 
 section.team .container h2 {
@@ -299,7 +323,7 @@ section.team .container ul {
 section.team .container ul li {
   background-color: white;
   border-radius: 2rem;
-  margin: 5em 1em;
+  margin: 5em 3em;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
@@ -340,15 +364,12 @@ section.contact .container {
 
 section.contact .container .contact-right {
   display: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 45%;
-  height: 100%;
 }
 
 section.contact .container .contact-right iframe {
   height: 100%;
+  width: 100%;
+  border-radius: 2em;
 }
 
 section.contact .container label {
@@ -380,5 +401,14 @@ section.contact .container input[type="button"] {
 
 section.contact .container .contact-left {
   margin: auto;
+}
+
+@media only screen and (min-width: 1250px) {
+  section.contact .container .contact-right {
+    display: unset;
+    width: 60%;
+    height: 400px;
+    padding-left: 1em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
