@@ -289,7 +289,7 @@ section.bollard .container ul li .text p {
     color: black;
   }
   section.bollard .container ul li .text p {
-    padding-top: 2em;
+    padding-top: 1em;
     color: black;
   }
 }
@@ -297,6 +297,16 @@ section.bollard .container ul li .text p {
 section.about {
   text-align: center;
   margin: 6em 0 10em 0;
+  position: relative;
+}
+
+section.about img {
+  position: absolute;
+  height: 600px;
+  top: 1em;
+  left: -1000px;
+  z-index: -1;
+  opacity: 50%;
 }
 
 section.team {
@@ -323,7 +333,7 @@ section.team .container ul {
 section.team .container ul li {
   background-color: white;
   border-radius: 2rem;
-  margin: 5em 3em;
+  margin: 5em 2em;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
@@ -337,8 +347,8 @@ section.team .container ul li .tilt-inner {
 }
 
 section.team .container ul li .tilt-inner:hover {
-  -webkit-transform: translateZ(30px);
-          transform: translateZ(30px);
+  -webkit-transform: translateZ(50px);
+          transform: translateZ(50px);
 }
 
 section.team .container ul li h3 {
