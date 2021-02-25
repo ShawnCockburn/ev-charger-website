@@ -13,8 +13,8 @@ const setTilt = () => {
   //if size is desktop enable tilt
   if (window.innerWidth > 1250) {
     $(".tilt-outer").tilt({
-      maxTilt: 4,
-      perspective: 300,
+      maxTilt: 6,
+      perspective: 800,
       easing: "cubic-bezier(.03,.98,.52,.99)",
       scale: 1.2,
     });

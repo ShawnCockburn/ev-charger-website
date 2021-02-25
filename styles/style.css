@@ -280,10 +280,11 @@ section.bollard .container ul li .text p {
     transition: -webkit-transform 200ms;
     transition: transform 200ms;
     transition: transform 200ms, -webkit-transform 200ms;
+    z-index: 2;
   }
   section.bollard .container ul li .inner-tilt:hover {
-    -webkit-transform: translateZ(30px);
-            transform: translateZ(30px);
+    -webkit-transform: translateZ(100px);
+            transform: translateZ(100px);
   }
   section.bollard .container ul li .text {
     color: black;
@@ -298,6 +299,11 @@ section.about {
   text-align: center;
   margin: 6em 0 10em 0;
   position: relative;
+}
+
+section.about .container {
+  max-width: 1000px;
+  margin: auto;
 }
 
 section.about img {
@@ -347,8 +353,8 @@ section.team .container ul li .tilt-inner {
 }
 
 section.team .container ul li .tilt-inner:hover {
-  -webkit-transform: translateZ(50px);
-          transform: translateZ(50px);
+  -webkit-transform: translateZ(100px);
+          transform: translateZ(100px);
 }
 
 section.team .container ul li h3 {
@@ -397,6 +403,7 @@ section.contact .container textarea {
   border: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  resize: none;
 }
 
 section.contact .container input[type="text"]:focus,

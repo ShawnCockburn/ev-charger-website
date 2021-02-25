@@ -2,6 +2,10 @@ section.about{
     text-align: center;
     margin: 6em 0 10em 0;
     position: relative;
+    .container {
+        max-width: 1000px;
+        margin: auto;
+    }
     img {
         position: absolute;
         height: 600px;
