@@ -1,4 +1,4 @@
-<img width='200' src='https://raw.githubusercontent.com/ShawnCockburn/ev-charger-website/37b2d7a4f44acd1ed46d82efd280158ae1f3417a/img/favicon.svg?token=AOL6G2NFR7WXIXARBRA72SDAG7VBM' />
+<img width='200' src='https://i.imgur.com/E83E5Cs.png' />
 
 # EV Charger Website
 
